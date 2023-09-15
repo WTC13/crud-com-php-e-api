@@ -1,20 +1,16 @@
 <?php
 
-//configuração do banco de dados
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$bd_name = 'banco_cliente';
+    $host = 'localhost';
+    $user = 'root';
+    $passwd = '';
+    $db_name = 'banco_tcc';
 
-// conexão com o banco de dados
-$conx = mysqli_connect($host, $user, $password, $bd_name);
+    $connx = mysqli_connect($host, $user, $passwd, $db_name);
 
-// teste de conexão
-if($conx){
-    echo 'conected';
-}
-else{
-    echo 'error';
-}
-
+    if($connx){
+        echo 'conectou';
+    }
+    else{
+        echo 'erro';
+    }
 ?>
