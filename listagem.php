@@ -39,9 +39,16 @@
                 ?>
                 <tr>
                     <td scope="row"><?php echo $id; ?></td>
-                    <td><?php echo $nome; ?></td>
-                    <td><?php echo $usuario; ?></td>
-                    <td><?php echo $email; ?></td>
+                    <td><input type="text" name="nome" value="<?php echo $nome; ?>"></td>
+                    <td><input type="text" name="usuario" value="<?php echo $usuario; ?>"></td>
+                    <td><input type="text" name="email" value="<?php echo $email; ?>"></td>
+
+                    <td>
+                        <form action="excluir.php" method="post">
+                            <td><input type="hidden" name="id" value="<?php echo $id; ?>">
+                            <input type="submit" value="excluir">
+                        </form>
+                    </td>
                 </tr>
 
                 <?php }; ?>
